@@ -169,3 +169,41 @@ select first_name,replace(first_name,'Abhay','amit') from employee;
 
 select first_name ,locate('abhay',first_name) from employee;
 select first_name,locate('a',first_name)from employee;
+
+
+# CONCAT
+
+ /* CONCAT() is used to combine two or more strings into one string. */
+
+select first_name,last_name,concat(first_name,last_name)from employee;
+
+select first_name,last_name,concat(first_name,' ',last_name)from employee;
+
+
+#Case Statement
+
+select first_name,last_name,age,
+case
+   when age<=24 then 'young'
+   when age between 25 and 60 then 'old'
+   when age>60 then "on death's door"
+end as age_bracket 
+from employee;
+
+update employee set age=68 where emp_id=109;
+
+/* pay increase and bonus
+
+* < 5%
+* > 7%
+* finance = bonus 10% */
+
+select first_name,last_name,salary,
+case
+when salary <50000 then salary+(salary*0.05)
+when salary>50000 then salary+(salary*0.07)
+end as new_salary,
+case
+when dept_id=107 then salary* .10 
+end as bonus
+from salary;

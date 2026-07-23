@@ -154,3 +154,18 @@ select first_name ,upper(first_name) from employee order by 2;
 select first_name ,lower(first_name) from employee ;
 
 select ltrim('  abhay   ') as test;
+
+
+select first_name,left(first_name,2),last_name,right(last_name,3) from employee;
+
+select first_name,substring(first_name,1,3),birth_date,substring(birth_date,6,2) from employee;
+
+
+#replace
+
+select first_name,replace(first_name,'a','m') from employee;
+select first_name,replace(first_name,'Abhay','amit') as new_name from employee;
+select first_name,replace(first_name,'Abhay','amit') from employee;
+
+select first_name ,locate('abhay',first_name) from employee;
+select first_name,locate('a',first_name)from employee;

@@ -1,0 +1,58 @@
+# 📚 SQL Practice Dataset
+
+A beginner-friendly SQL practice dataset designed to help learners improve their SQL skills through hands-on practice. This repository includes a sample employee database with realistic data and common SQL operations, making it ideal for learning and practicing SQL queries.
+
+## 📌 What's Included
+
+* Employee table with sample records
+* `CREATE TABLE` statements
+* `INSERT` queries
+* `ALTER TABLE` examples
+* `UPDATE` queries
+* Ready-to-use SQL script
+* Beginner-friendly dataset
+
+## 🎯 Perfect For Practicing
+
+* SELECT statements
+* WHERE clause
+* ORDER BY
+* GROUP BY
+* HAVING
+* JOINS
+* Aggregate Functions
+* String Functions
+* Date Functions
+* ALTER TABLE
+* UPDATE & DELETE
+* UNION
+* Subqueries
+* Basic SQL interview questions
+
+## 🚀 How to Use
+
+1. Clone this repository.
+2. Open your preferred SQL database (MySQL recommended).
+3. Import or run the `abhay.sql` file.
+4. Start practicing SQL queries.
+
+## 💻 Requirements
+
+* MySQL Server
+* MySQL Workbench (Recommended) or any SQL client
+
+## 🤝 Contributing
+
+Feel free to improve the dataset by adding more tables, sample data, or SQL exercises. Pull requests are welcome!
+
+## 📄 License
+
+This project is open-source and intended for educational purposes.
+
+---
+
+### 👨‍💻 Author
+
+**Abhay Gupta**
+
+GitHub: https://github.com/Cybertron2425

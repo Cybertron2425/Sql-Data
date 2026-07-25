@@ -473,3 +473,11 @@ max(age)as avg_max,
 min(age)as avg_min,
 count(age) as avg_count
 from employee group by gender) as new_avg_age;
+
+
+
+-- ============================================================
+-- 15. WINDOW FUNCTIONS.
+-- ============================================================
+
+

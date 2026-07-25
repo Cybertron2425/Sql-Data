@@ -1,58 +1,177 @@
-# 📚 SQL Practice Dataset
+<div align="center">
 
-A beginner-friendly SQL practice dataset designed to help learners improve their SQL skills through hands-on practice. This repository includes a sample employee database with realistic data and common SQL operations, making it ideal for learning and practicing SQL queries.
+# 🗄️ SQL Practice Dataset
 
-## 📌 What's Included
+### 📚 Beginner to Advanced MySQL Practice Queries
 
-* Employee table with sample records
-* `CREATE TABLE` statements
-* `INSERT` queries
-* `ALTER TABLE` examples
-* `UPDATE` queries
-* Ready-to-use SQL script
-* Beginner-friendly dataset
+A complete **MySQL Practice Dataset** containing sample tables, real-world data, and SQL queries from **Basic to Advanced**.
 
-## 🎯 Perfect For Practicing
+![GitHub last commit](https://img.shields.io/github/last-commit/Cybertron2425/SQL-Practice-Dataset)
+![GitHub repo size](https://img.shields.io/github/repo-size/Cybertron2425/SQL-Practice-Dataset)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 
-* SELECT statements
-* WHERE clause
-* ORDER BY
-* GROUP BY
-* HAVING
-* JOINS
-* Aggregate Functions
-* String Functions
-* Date Functions
-* ALTER TABLE
-* UPDATE & DELETE
-* UNION
-* Subqueries
-* Basic SQL interview questions
-
-## 🚀 How to Use
-
-1. Clone this repository.
-2. Open your preferred SQL database (MySQL recommended).
-3. Import or run the `abhay.sql` file.
-4. Start practicing SQL queries.
-
-## 💻 Requirements
-
-* MySQL Server
-* MySQL Workbench (Recommended) or any SQL client
-
-## 🤝 Contributing
-
-Feel free to improve the dataset by adding more tables, sample data, or SQL exercises. Pull requests are welcome!
-
-## 📄 License
-
-This project is open-source and intended for educational purposes.
+</div>
 
 ---
 
-### 👨‍💻 Author
+# 📖 About
+
+This repository is designed for students and beginners who want to practice SQL using a real dataset.
+
+It includes complete examples of:
+
+- Database Creation
+- Table Creation
+- Data Insertion
+- Data Modification
+- Filtering
+- Sorting
+- Joins
+- Aggregate Functions
+- String Functions
+- Subqueries
+
+---
+
+# 📂 Project Structure
+
+```text
+SQL-Practice-Dataset
+│
+├── README.md
+├── sql_practice.sql
+└── LICENSE
+```
+
+---
+
+# 🗃️ Database
+
+```
+Database : abhay
+```
+
+### Tables
+
+| Table | Description |
+|--------|-------------|
+| Employee | Employee personal details |
+| Salary | Employee salary information |
+| Department | Department information |
+
+---
+
+# 🚀 SQL Topics Covered
+
+| Topic | Status |
+|-------|:------:|
+| CREATE DATABASE | ✅ |
+| USE DATABASE | ✅ |
+| CREATE TABLE | ✅ |
+| INSERT INTO | ✅ |
+| ALTER TABLE | ✅ |
+| UPDATE | ✅ |
+| SELECT | ✅ |
+| WHERE | ✅ |
+| DISTINCT | ✅ |
+| LIKE | ✅ |
+| GROUP BY | ✅ |
+| ORDER BY | ✅ |
+| HAVING | ✅ |
+| LIMIT | ✅ |
+| ALIAS | ✅ |
+| INNER JOIN | ✅ |
+| LEFT JOIN | ✅ |
+| RIGHT JOIN | ✅ |
+| SELF JOIN | ✅ |
+| MULTIPLE JOIN | ✅ |
+| UNION | ✅ |
+| STRING FUNCTIONS | ✅ |
+| SUBQUERY | ✅ |
+
+---
+
+# 📋 Dataset Overview
+
+### Employee Table
+
+| Column |
+|---------|
+| emp_id |
+| first_name |
+| last_name |
+| age |
+| gender |
+| birth_date |
+| phone_no |
+
+---
+
+### Salary Table
+
+| Column |
+|---------|
+| emp_id |
+| first_name |
+| last_name |
+| occupation |
+| salary |
+| dept_id |
+
+---
+
+### Department Table
+
+| Column |
+|---------|
+| dept_id |
+| dept_name |
+| location |
+
+---
+
+# 💻 How to Run
+
+```bash
+1. Open MySQL Workbench
+2. Create Database
+3. Open sql_practice.sql
+4. Execute the script
+```
+
+---
+
+# 🎯 Perfect For
+
+- SQL Beginners
+- College Practical
+- Lab Assignments
+- SQL Interviews
+- Placement Preparation
+- Practice
+
+---
+
+# 🛠 Technologies Used
+
+- MySQL
+- SQL
+- MySQL Workbench
+
+---
+
+# 👨‍💻 Author
 
 **Abhay Gupta**
 
-GitHub: https://github.com/Cybertron2425
+GitHub:
+https://github.com/Cybertron2425
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you found it helpful!
+
+</div>

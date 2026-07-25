@@ -1,0 +1,177 @@
+<div align="center">
+
+# 🗄️ SQL Practice Dataset
+
+### 📚 Beginner to Advanced MySQL Practice Queries
+
+A complete **MySQL Practice Dataset** containing sample tables, real-world data, and SQL queries from **Basic to Advanced**.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Cybertron2425/SQL-Practice-Dataset)
+![GitHub repo size](https://img.shields.io/github/repo-size/Cybertron2425/SQL-Practice-Dataset)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
+
+</div>
+
+---
+
+# 📖 About
+
+This repository is designed for students and beginners who want to practice SQL using a real dataset.
+
+It includes complete examples of:
+
+- Database Creation
+- Table Creation
+- Data Insertion
+- Data Modification
+- Filtering
+- Sorting
+- Joins
+- Aggregate Functions
+- String Functions
+- Subqueries
+
+---
+
+# 📂 Project Structure
+
+```text
+SQL-Practice-Dataset
+│
+├── README.md
+├── sql_practice.sql
+└── LICENSE
+```
+
+---
+
+# 🗃️ Database
+
+```
+Database : abhay
+```
+
+### Tables
+
+| Table | Description |
+|--------|-------------|
+| Employee | Employee personal details |
+| Salary | Employee salary information |
+| Department | Department information |
+
+---
+
+# 🚀 SQL Topics Covered
+
+| Topic | Status |
+|-------|:------:|
+| CREATE DATABASE | ✅ |
+| USE DATABASE | ✅ |
+| CREATE TABLE | ✅ |
+| INSERT INTO | ✅ |
+| ALTER TABLE | ✅ |
+| UPDATE | ✅ |
+| SELECT | ✅ |
+| WHERE | ✅ |
+| DISTINCT | ✅ |
+| LIKE | ✅ |
+| GROUP BY | ✅ |
+| ORDER BY | ✅ |
+| HAVING | ✅ |
+| LIMIT | ✅ |
+| ALIAS | ✅ |
+| INNER JOIN | ✅ |
+| LEFT JOIN | ✅ |
+| RIGHT JOIN | ✅ |
+| SELF JOIN | ✅ |
+| MULTIPLE JOIN | ✅ |
+| UNION | ✅ |
+| STRING FUNCTIONS | ✅ |
+| SUBQUERY | ✅ |
+
+---
+
+# 📋 Dataset Overview
+
+### Employee Table
+
+| Column |
+|---------|
+| emp_id |
+| first_name |
+| last_name |
+| age |
+| gender |
+| birth_date |
+| phone_no |
+
+---
+
+### Salary Table
+
+| Column |
+|---------|
+| emp_id |
+| first_name |
+| last_name |
+| occupation |
+| salary |
+| dept_id |
+
+---
+
+### Department Table
+
+| Column |
+|---------|
+| dept_id |
+| dept_name |
+| location |
+
+---
+
+# 💻 How to Run
+
+```bash
+1. Open MySQL Workbench
+2. Create Database
+3. Open sql_practice.sql
+4. Execute the script
+```
+
+---
+
+# 🎯 Perfect For
+
+- SQL Beginners
+- College Practical
+- Lab Assignments
+- SQL Interviews
+- Placement Preparation
+- Practice
+
+---
+
+# 🛠 Technologies Used
+
+- MySQL
+- SQL
+- MySQL Workbench
+
+---
+
+# 👨‍💻 Author
+
+**Abhay Gupta**
+
+GitHub:
+https://github.com/Cybertron2425
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you found it helpful!
+
+</div>

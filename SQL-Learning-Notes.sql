@@ -476,8 +476,77 @@ from employee group by gender) as new_avg_age;
 
 
 
+ 
 -- ============================================================
--- 15. WINDOW FUNCTIONS.
+-- 15. WINDOW FUNCTIONS
 -- ============================================================
+ 
+-- OVER(PARTITION BY ...) calculates an aggregate (like AVG) for each
+-- group, but WITHOUT collapsing the rows into one row per group -
+-- every individual employee row is still shown, just with the group's
+-- average salary attached next to it.
 
 
+select dm.first_name,dm.last_name,gender,avg(salary) over( partition by gender)
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id;
+ 
+-- Compare this to a normal GROUP BY: it DOES collapse rows into one
+-- row per gender, so we lose the individual employee-level detail.
+-- Window functions solve this problem by keeping both the detail
+-- rows AND the group-level aggregate together.
+
+
+select dm.first_name,dm.last_name,gender,avg(salary)
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id
+group  by dm.first_name,dm.last_name,gender;
+ 
+-- SUM() OVER(PARTITION BY gender) gives the total salary for each
+-- gender group, shown next to every row of that group.
+
+
+select dm.first_name,dm.last_name,gender,
+sum(salary) over( partition by gender)
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id;
+ 
+-- Adding ORDER BY inside OVER() turns SUM() into a RUNNING TOTAL
+-- (cumulative sum) within each gender group, ordered by emp_id.
+
+
+select dm.first_name,dm.last_name,gender,salary,
+sum(salary) over( partition by gender order by dm.emp_id)
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id;
+ 
+-- ROW_NUMBER() gives each row a unique, ever-increasing number
+-- within its partition (here, within each gender), ordered by
+-- salary descending. No ties - every row gets a different number.
+
+
+select dm.first_name,dm.last_name,gender, row_number() over( partition by gender order by salary desc)
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id;
+ 
+-- RANK() vs DENSE_RANK() vs ROW_NUMBER():
+
+-- ROW_NUMBER  -> always unique numbers (1,2,3,4...), even if salaries tie.
+-- RANK        -> equal salaries get the SAME rank, but the next rank
+--                SKIPS numbers (e.g. 1,2,2,4).
+-- DENSE_RANK  -> equal salaries get the SAME rank, but the next rank
+--                does NOT skip any number (e.g. 1,2,2,3).
+
+
+select dm.first_name,dm.last_name,gender, row_number() over( partition by gender order by salary desc) as row_num,
+rank()over( partition by gender order by salary desc) as rank_,
+dense_rank()over( partition by gender order by salary desc) as den_rank
+from employee dm
+join salary s
+on dm.emp_id=s.emp_id;
+ 

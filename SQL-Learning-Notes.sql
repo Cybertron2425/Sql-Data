@@ -550,3 +550,30 @@ from employee dm
 join salary s
 on dm.emp_id=s.emp_id;
  
+ 
+ -- cte --
+ 
+ with high_salary as (
+ select* from salary where salary>=60000
+ )
+
+select* from high_salary;
+
+
+with exp as(
+select e.first_name,e.last_name,s.salary,s.occupation,e.gender,avg(salary)over(partition by gender) as avg_salary
+from employee e
+join salary s
+on e.emp_id=s.emp_id
+)
+select * from exp;
+
+
+with exp1( Gender,avg_sal,max_sal,min_sal,count_sal) as(
+select e.gender,avg(salary) ,max(salary),min(salary),count(*) over(partition by gender)
+from employee e
+join salary s
+on e.emp_id= s.emp_id
+group by e.gender
+)
+select * from exp1;
